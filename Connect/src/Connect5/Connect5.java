@@ -46,8 +46,6 @@ public class Connect5 extends Board{
 
 			if(isSamsam(h,w))//삼삼체크 추가
 			{
-
-				System.out.println(h+","+w);
 				setBoardEmpty(h,w);
 				System.out.println("no samsam man");
 				wb_turn = !wb_turn;
@@ -76,10 +74,8 @@ public class Connect5 extends Board{
 				gameover=true;
 			}
 			return;
-			
 			}
-			
-			
+
 			private int[] countLines(int h, int w) {
 			int[] lineCounts= new int[4];//lineCounts[0]이 좌우방향 총 라인 수, [1]이 상하, [2]가 오른 대각, [3]이 왼 대각
 			lineCounts[0]=-1;
