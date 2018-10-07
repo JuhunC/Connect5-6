@@ -96,4 +96,27 @@ public class Board {
 	public int getBoardSizeHeight() {
 		return SIZE_HEIGHT;
 	}
+	
+	public char getBoard(int h, int w) {
+		if(h>=SIZE_HEIGHT || w >=SIZE_WIDTH || w<0 || h<0) 
+		{
+			return 0;
+		}
+		else
+		{
+			return board[h][w];
+		}
+	}//추가 
+	public void setBoardEmpty(int h, int w) {
+		if(h>=SIZE_HEIGHT || w >=SIZE_WIDTH || w<0 || h<0) 
+		{
+			return ;
+		}
+		else
+		{
+			board[h][w]=EMPTY;
+		}
+		
+	}//추가
+	
 }
